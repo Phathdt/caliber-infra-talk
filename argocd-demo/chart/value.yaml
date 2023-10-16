@@ -15,7 +15,7 @@ my-nginx-1:
       value: <path:kv-v2/data/friendscan/prod#DEMO_ABC>?3
 
 my-nginx-2:
-  enabled: false
+  enabled: true
 
   replicaCount: 1
 
