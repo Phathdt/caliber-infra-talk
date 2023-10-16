@@ -9,7 +9,3 @@ dependencies:
     condition: my-nginx.enabled
     version: '0.1.0'
     repository: file://../../helm-demo/my-nginx
-  - name: my-nginx2
-    condition: my-nginx2.enabled
-    version: '0.1.0'
-    repository: file://../../helm-demo/my-nginx
