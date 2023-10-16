@@ -12,4 +12,4 @@ my-nginx:
     - name: DB_DSN1
       value: <path:kv-v2/data/friendscan/prod#DB_DSN>?2
     - name: DB_DSN2
-      value: <path:kv-v2/data/friendscan/prod#DB_DSN>?3
+      value: <path:kv-v2/data/friendscan/prod#DEMO_ABC>?3
