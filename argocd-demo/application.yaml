@@ -7,7 +7,7 @@ spec:
   project: caliber-infra-talk
   source:
     repoURL: 'https://github.com/Phathdt/caliber-infra-talk'
-    path: helm-demo/my-nginx
+    path: argocd-demo/chart
     targetRevision: master
     plugin:
       name: argocd-vault-plugin-helm
