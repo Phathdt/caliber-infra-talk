@@ -6,6 +6,12 @@ description: A Helm chart for Kubernetes
 engine: gotpl
 dependencies:
   - name: my-nginx
-    condition: my-nginx.enabled
+    condition: my-nginx-1.enabled
     version: '0.1.0'
     repository: file://../../helm-demo/my-nginx
+    alias: my-nginx-1
+  - name: my-nginx
+    condition: my-nginx-2.enabled
+    version: '0.1.0'
+    repository: file://../../helm-demo/my-nginx
+    alias: my-nginx-2
