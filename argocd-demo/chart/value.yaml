@@ -4,4 +4,4 @@ my-nginx:
   replicaCount: 5
 
   image:
-    tag: "1.25-alpine"
+    tag: "1.25.2-alpine"
