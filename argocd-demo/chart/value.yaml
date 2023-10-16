@@ -13,3 +13,15 @@ my-nginx:
       value: <path:kv-v2/data/friendscan/prod#DB_DSN>?2
     - name: DB_DSN2
       value: <path:kv-v2/data/friendscan/prod#DEMO_ABC>?3
+
+my-nginx2:
+  enabled: true
+
+  replicaCount: 1
+
+  image:
+    tag: "1.25-alpine"
+
+  envs:
+    - name: DB_DSN2
+      value: <path:kv-v2/data/friendscan/prod#DEMO_ABC>?34444
