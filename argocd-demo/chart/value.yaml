@@ -1,7 +1,7 @@
 my-nginx:
   enabled: true
 
-  replicaCount: 1
+  replicaCount: 2
 
   image:
     tag: "1.25.2-alpine"
