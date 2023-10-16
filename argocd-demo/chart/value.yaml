@@ -1,7 +1,7 @@
 my-nginx-1:
   enabled: true
 
-  replicaCount: 2
+  replicaCount: 1
 
   image:
     tag: "1.25.2-alpine"
@@ -15,7 +15,7 @@ my-nginx-1:
       value: <path:kv-v2/data/friendscan/prod#DEMO_ABC>?3
 
 my-nginx-2:
-  enabled: true
+  enabled: false
 
   replicaCount: 1
 
