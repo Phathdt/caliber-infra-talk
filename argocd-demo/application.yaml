@@ -1,0 +1,25 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: caliber-infra-talk
+  namespace: argocd
+spec:
+  project: caliber-infra-talk
+  source:
+    repoURL: 'https://github.com/Phathdt/caliber-infra-talk'
+    path: helm-demo/my-nginx
+    targetRevision: master
+    plugin:
+      name: argocd-vault-plugin-helm
+      env:
+        - name: HELM_ARGS
+          value: "-f ./values.yaml"
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: caliber-infra-talk
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
