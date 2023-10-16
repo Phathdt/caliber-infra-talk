@@ -1,7 +1,15 @@
 my-nginx:
   enabled: true
 
-  replicaCount: 5
+  replicaCount: 1
 
   image:
     tag: "1.25.2-alpine"
+
+  envs:
+    - name: DB_DSN
+      value: <path:kv-v2/data/friendscan/prod#DB_DSN>
+    - name: DB_DSN1
+      value: <path:kv-v2/data/friendscan/prod#DB_DSN>
+    - name: DB_DSN2
+      value: <path:kv-v2/data/friendscan/prod#DB_DSN>
